@@ -1,0 +1,177 @@
+
+
+*{
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color:whitesmoke;
+    
+    font-family: sans-serif;
+    color:black;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+}
+
+header:first-of-type {
+    padding: 0;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul li {
+    background-color:azure;
+    padding: 1em;
+
+    border-radius: 10%;
+}
+
+
+div {
+    display: flex;
+}
+
+
+
+
+section div div {
+    display: flex;
+    flex-direction: column;    
+}
+
+
+main section:first-of-type p{
+    margin-right: 24em;
+}
+
+
+nav ul li:hover {
+    background-color:cadetblue;
+    border-radius: 10%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:cadetblue;
+    font-weight: bold;
+}
+
+nav ul li:hover a {
+    color:white;
+}
+
+
+h1 {
+    font-family: sans-serif;
+}
+
+
+header {
+    background-color:lightsteelblue;
+    text-align: center;
+    padding: 20px;
+    border-style:double;
+    border-color:white;
+  }
+
+
+  main, footer {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+
+.koreancuisine section div div p {
+    margin-left: 2em;
+}
+
+article div div{
+    display:flex;
+    flex-direction: column;
+    margin-left: 2em;
+    border-width: 7px; 
+    border-style:dotted;
+    border-color:cadetblue;
+    padding: 1em;
+}
+
+article div ul {
+    display: flex;
+    flex-direction: column;
+}
+
+section header, article header {
+    background-color:lightgray;
+}
+
+article div img {
+    height: 18em;
+}
+
+article div {
+    flex-wrap: wrap;
+}
+
+ol {
+    margin-left: 1em;
+}
+
+
+
+ul li {
+    list-style-type: none;
+}
+
+section div div img {
+    height: 20em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.amsterdam {
+    height: 15em;
+    width: auto;
+}
+
+
+  @keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+  }
+
+  img:hover {
+    animation: vibrate 0.5s;
+    animation-iteration-count:initial;
+  }
+
+  .skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
